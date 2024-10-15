@@ -1,0 +1,49 @@
+p1.dotted
+{
+border-style: dotted;
+border-width: 5px;
+border-color: red;
+padding: 5px;
+
+}
+p1.dashed
+{
+border-style: dashed;
+border-width: 3px;
+}
+p1.solid
+{
+border-style: solid;
+padding-bottom: 10px;
+padding-top: 30px;
+}
+p1.hibrida
+{
+border-bottom: double;
+border-top: double;
+border-left: solid;
+border-right: solid;
+
+}
+p1.groove
+{
+border-style: groove;
+}
+p1.ridge
+{
+border-style: ridge;
+border-width: 8px;
+
+}
+p1.inset
+{
+border-style: inset;
+border-width: 5px;
+padding-left: 5%;
+}
+p1.outset
+{
+border-style: outset;
+border-width: 5px;
+padding: 25px;
+}
