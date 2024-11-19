@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>JavaScript - Aula4</title>
+    <script>
+        function checarNumero(elemento){
+            regexInt = /^\d+$/g;
+            regexFloat = /^\d+\.\d+$/g;
+        }
+        if (elemento.value.match(regexInt)){
+            alert("Número Inteiro")
+        }else if
+        (elemento.value.match(regexFloat)) {
+            alert("Número decimal")
+        }else{
+            alert("Não é um número")
+        }
+    </script>
+</head>
+<body>
+    digite um número: <input type="text" id="elemento" onblur="checarNumero(elemento)">
+</body>
+</html>

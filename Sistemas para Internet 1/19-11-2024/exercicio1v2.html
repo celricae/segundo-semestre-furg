@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>JavaScript - Aula4</title>
+    <script>
+        function functionTeste(){
+            var regexp = /^[+-]?\d+(\.\d+)?$/;
+            var num = document.getElementById("numero").value;
+            if (regexp.test(num)){
+                alert("é número real ou inteiro")
+            } else{
+                alert("não é número")
+            }
+
+        }
+    </script>
+</head>
+<body>
+    digite um número: <input type="text" id="elemento" onblur="functionTeste()">
+</body>
+</html>
