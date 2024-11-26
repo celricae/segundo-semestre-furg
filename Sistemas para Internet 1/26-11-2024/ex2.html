@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 2</title>
+    <script src="ex2.js"></script>
+</head>
+<body>
+    <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" onblur="upperCase(this)">
+        <label for="idade">Idade</label>
+        <input type="text" name="idade" id="idade" onblur="validaIdade(this)">
+        <label for="confirmaSenha">Senha</label>
+        <input type="password" onblur="validaSenha(this)" placeholder="Senha" id="password" required>
+        <input type="password" placeholder="Confirme Senha" id="confirm_password" required>
+        <button type="submit" class="pure-button pure-button-primary">Confirmar</button>
+    </form>
+</body>
+</html>

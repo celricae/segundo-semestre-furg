@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+        }
+        #menu {
+            background-color: #0000ff;
+            width: 200px;
+            height: 100vh;
+        }
+        .content {
+            padding: 10px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="menu">Menu</div>
+        <div class="content">
+            <form action="">
+                <h1>Matrícula</h1>
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <td><input type="text" name="nome" id="nome"></td>
+                    </tr>
+                    <tr>
+                        <th>Idade</th>
+                        <td><input type="text" name="idade" id="idade"></td>
+                    </tr>
+                    <tr>
+                        <th>Número matrícula</th>
+                        <td><input type="text" name="matricula" id="matricula"></td>
+                    </tr>
+                    <tr>
+                        <th>Curso</th>
+                        <td>
+                            <select name="curso" id="curso">
+                                <option value="SI">Sistemas de Informação</option>
+                                <option value="engcomp">Engenharia de Computação</option>
+                                <option value="eng automação">Engenharia de Automação</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Disciplinas</th>
+                        <td>
+                            <input type="checkbox" name="disciplinas" id="disciplinas" value="matdisc">Matemática Discreta
+                            <input type="checkbox" name="disciplinas" id="disciplinas" value="sis1">Sistemas para internet 1
+                            <input type="checkbox" name="disciplinas" id="disciplinas" value="calc1">Cálculo 1
+                        </td>
+                    </tr>
+                    <tr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Atividade Extraclasse</th>
+                    <td>
+                        <input type="radio" id="Atividade" name="Atividade" value="monitoria">Monitoria
+                        <input type="radio" id="Atividade" name="Atividade" value="iniciacao">Iniciação cientifica
+                        <input type="radio" id="Atividade" name="Atividade" value="maratona">Maratona de programação
+                    </td>
+                </tr>
+                <tr>
+                    <th>Observações</th>
+                    <td>
+                        <textarea placeholder="Fale onde estudou no ensino médio e qual curso se formou" name="observacoes" id="observacoes" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Login</th>
+                    <td>
+                        <input type="text" id="login" name="login" placeholder="Digite seu login">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Senha</th>
+                    <td>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

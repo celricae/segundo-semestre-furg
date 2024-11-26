@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 3</title>
+    <script>
+        function progressao() {
+            let valorInicial = parseInt(document.getElementById('valorInicial').value);
+            let valorFinal = parseInt(document.getElementById('valorFinal').value);
+            let resultado = document.getElementById('resultado');
+            let i = valorInicial;
+            while (i <= valorFinal) {
+                resultado.innerHTML += i + ' ';
+                i++;
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="valorInicial">Valor inicial</label>
+    <input type="text" name="valorInicial" id="valorInicial">
+    <label for="valorFinal">Valor final</label>
+    <input type="text" name="valorFinal" id="valorFinal">
+    <button onclick="progressao()">Progressão</button>
+    <p id="resultado"></p>
+</body>
