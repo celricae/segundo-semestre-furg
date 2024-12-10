@@ -1,0 +1,48 @@
+<!--Construa um gráfico de barras (Horizontal) com os seguintes dados:
+Categoria e valores:
+Janeiro, 10
+Fevereiro, 20
+março, 30
+abril, 40-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <title>Ex 2</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            Highcharts.chart("highcharts-bar-chart", {
+                chart: {
+                type: "bar", // Tipo de gráfico: barra
+                },
+                title: {
+                text: "Gráfico de Barras", // Título do gráfico
+                },
+                xAxis: {
+                categories: ["Janeiro", "Fevereiro", "Março", "Abril"], // Categorias do eixo X
+                },
+                yAxis: {
+                title: {
+                    text: "Valores", // Título do eixo Y
+                },
+                },
+                series: [
+                {
+                    name: "Valores", // Nome da série
+                    data: [10, 20, 30, 40], // Dados da série
+                },
+                ],
+            });
+            });
+
+    </script>
+    <div id="highcharts-bar-chart"></div>
+    
+</body>
+</html>

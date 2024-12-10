@@ -1,0 +1,43 @@
+<!--Construa um gráfico de colunas (vertical) com os dados:
+Produto A, Valor 35
+Produto B, valor 52
+Produto C, valor 20-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <title>Ex 3</title>
+</head>
+<body>
+    <script>
+         $(document).ready(function () {
+            Highcharts.chart("highcharts-column-chart", {
+                chart: {
+                type: "column", // Tipo de gráfico: coluna
+                },
+                title: {
+                text: "Gráfico de Colunas", // Título do gráfico
+                },
+                xAxis: {
+                categories: ["Produto A", "Produto B", "Produto C"], // Categorias do eixo X
+                },
+                yAxis: {
+                title: {
+                    text: "Valores", // Título do eixo Y
+                },
+                },
+                series: [
+                {
+                    name: "Valores", // Nome da série
+                    data: [35, 52, 20], // Dados da série
+                },
+                ],
+            });
+            });
+    </script>
+    <div id="highcharts-column-chart"></div>
+</body>
+</html>

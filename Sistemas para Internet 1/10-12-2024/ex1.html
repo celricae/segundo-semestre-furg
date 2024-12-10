@@ -1,0 +1,51 @@
+<!--faça um grafico de linhas com 2 linhas e 3 pontos.
+-Linha A
+ponto A: 20
+ponto B: 4
+ponto C: 9
+-Linha B
+ponto A: 15
+ponto B: 8
+ponto C: 12
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <title>Ex 1</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            Highcharts.chart("highcharts-line-chart", {
+                chart: {
+                type: "line", // Tipo de gráfico: linha
+                },
+                title: {
+                text: "Gráfico de Linhas", // Título do gráfico
+                },
+                yAxis: {
+                title: {
+                    text: "Valores", // Título do eixo Y
+                },
+                },
+                series: [
+                {
+                    name: "Linha 1", // Nome da linha
+                    data: [20, 4, 9], // Dados da linha
+                },
+                {
+                    name: "Linha 2",
+                    data: [15, 8, 12],
+                },
+                ],
+            });
+            });
+    </script>
+    <div id="highcharts-line-chart"></div>
+
+</body>
+</html>
