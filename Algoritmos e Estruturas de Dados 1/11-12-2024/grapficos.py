@@ -19,7 +19,7 @@ def cria_botao(x1,y1,x2,y2):
     lista_botoes.append(novo_botao)
     return novo_botao
 
-def aciona_botao(onde_cliquei)
+def aciona_botao(onde_cliquei):
     for um_botao in lista_botoes:
         if foi_no_botao(um_botao,onde_cliquei):
             um_botao.setFill("red")
@@ -29,9 +29,19 @@ def aciona_botao(onde_cliquei)
 lista_botoes = []
 win = gf.GraphWin("Minha Janela", 400, 350) # Cria uma janela
 
+
 botao = cria_botao(10,60,190,100)
+texto = gf.Text(botao.getCenter(),"ok")
+texto.setSize(20)
+texto.draw(win)
 botao = cria_botao(100,160,290,200)
-botao = cria_botao(140,200,400,500)
+texto = gf.Text(botao.getCenter(),"cancelar")
+texto.setSize(20)
+texto.draw(win)
+botao = cria_botao(140,200,300,300)
+texto = gf.Text(botao.getCenter(),"aaaa")
+texto.setSize(20)
+texto.draw(win)
 
 print(lista_botoes)
 
